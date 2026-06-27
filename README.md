@@ -25,7 +25,7 @@ Compliance teams often need hundreds or thousands of realistic test cases to eva
 - Fuzzy matching behavior
 - Screening engine performance
 - Regression testing after model or rule changes
-- False positive analysis
+- False positive analysis (out of scope of this project)
 
 Performing these searches manually through the OFAC search portal is time-consuming and difficult to scale.
 
@@ -150,7 +150,6 @@ Automate repetitive search and dataset generation tasks for compliance and engin
 - Selenium
 - Chrome WebDriver
 - Pandas
-- Headless Chrome
 - CSV Export
 
 ---
@@ -168,11 +167,9 @@ OFAX/
 │   └── logs/
 │
 ├── src/
-│   ├── browser.py
-│   ├── scraper.py
-│   ├── parser.py
-│   ├── exporter.py
-│   └── main.py
+│   ├── search_entities.py
+│   ├── process_data.py
+│   └── exporter.py
 │
 ├── requirements.txt
 └── README.md
