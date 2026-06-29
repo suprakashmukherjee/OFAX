@@ -1,3 +1,9 @@
+# Project data folders
+downloads/
+
+# Additional project files
+/input/entity_names copy.csv
+
 # Python
 
 **pycache**/
@@ -60,7 +66,7 @@ dist/
 # Generated Reports
 
 reports/
-*.csv
+
 
 # Temporary Files
 
