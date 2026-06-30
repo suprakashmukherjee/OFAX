@@ -1,159 +1,251 @@
 """
-@author : Suprakash Mukherjee
+------------------------------------------------------------------------------
+OFAX - OFAC Search Automation
+Author : Suprakash Mukherjee
 
-Input file :  ./input/entity_names.csv containing columns : "SLNO" ie; serial number, "NAME"
+Description
+-----------
+Automates searches on the OFAC Sanctions Search website and downloads
+the search results for a list of entity names.
+
+Input
+-----
+./input/entity_names.csv
+
+Required Columns
+----------------
+SLNO
+NAME
+
+Output
+------
+Downloaded files are saved to:
+
+./downloads/
+
+Project Structure
+-----------------
+OFAX/
+│
+├── input/
+│   └── entity_names.csv
+│
+├── downloads/
+│
+└── src/
+    └── search_entities.py
+------------------------------------------------------------------------------
 """
 
-# selenium webdriver
-from selenium import webdriver
-import time
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 import os
-import pandas as pd
-import re
-from selenium.webdriver.support.ui import WebDriverWait, Select
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
+import time
 from pathlib import Path
 
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-print("[+] All imports successful..")
+print("[+] All imports successful.")
 
-# global variables
-ofac_sanctions_search = r"https://sanctionssearch.ofac.treas.gov/"
-set_download_path = r"/Users/tonystark/Documents/Codebase/Github Codebase/OFAX/downloads/"
+# =============================================================================
+# Project Configuration
+# =============================================================================
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent
+
+INPUT_FILE = PROJECT_ROOT / "input" / "entity_names.csv"
+DOWNLOAD_PATH = PROJECT_ROOT / "downloads"
+
+OFAC_URL = "https://sanctionssearch.ofac.treas.gov/"
+
 
 def configure_chrome():
-    # create download directory if not exists
-    if not os.path.exists(set_download_path):
-        os.makedirs(set_download_path)
+    """
+    Configure Chrome browser.
 
-    # configure Chrome options
+    The download directory is automatically created if it does not exist.
+    """
+
+    DOWNLOAD_PATH.mkdir(parents=True, exist_ok=True)
+
     options = Options()
-    # options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-sham-usage')
 
-    # set download preferences
+    # Uncomment for headless execution
+    options.add_argument("--headless=new")
+
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
     prefs = {
-        "download.default_directory" : set_download_path,
+        "download.default_directory": str(DOWNLOAD_PATH),
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
-        "safebrowsing.enabled": True
+        "safebrowsing.enabled": True,
     }
 
     options.add_experimental_option("prefs", prefs)
 
     driver = webdriver.Chrome(options=options)
+
     return driver
 
+
 def download_data(driver, name, min_name_score):
-    ofac_page = ofac_sanctions_search
-    driver.get(ofac_page)
-    main_window = driver.current_window_handle
+    """
+    Search an entity on the OFAC website and download the search results.
+    """
+
+    driver.get(OFAC_URL)
+
     time.sleep(3)
 
-    # # click reset
-    # driver.find_element(By.ID, "ctl00_MainContent_btnReset").click()
-    # time.sleep(3)
+    # Enter entity name
 
-    # enter name
-    elem = WebDriverWait(driver,10).until(
-        EC.visibility_of_element_located((By.ID, "ctl00_MainContent_txtLastName"))
+    elem = WebDriverWait(driver, 10).until(
+        EC.visibility_of_element_located(
+            (By.ID, "ctl00_MainContent_txtLastName")
+        )
     )
+
     elem.clear()
     elem.send_keys(name)
 
     time.sleep(1)
 
-    # Enter the minimum Score for the search
-    # Implemented using Slider
+    # -------------------------------------------------------------------------
+    # Configure minimum name score slider
+    # -------------------------------------------------------------------------
 
-    # Locate Element
-    rail = WebDriverWait(driver,10).until(
-        EC.presence_of_element_located((By.ID, "Slider1_railElement"))
+    rail = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located(
+            (By.ID, "Slider1_railElement")
+        )
     )
 
     handle = driver.find_element(By.ID, "Slider1_handleImage")
 
-    # get width
-    rail_width = rail.size['width']
+    rail_width = rail.size["width"]
 
-    # Slider range
     min_val = 50
     max_val = 100
-    target = min_name_score
 
-    # calculate offset
-    ratio = (target - min_val) / (max_val - min_val)
+    ratio = (min_name_score - min_val) / (max_val - min_val)
+
     offset = int(rail_width * ratio)
 
-    # Move slider (start from leftmost first)
-    ActionChains(driver).click_and_hold(handle).move_by_offset(-rail_width, 0).release().perform()
+    ActionChains(driver) \
+        .click_and_hold(handle) \
+        .move_by_offset(-rail_width, 0) \
+        .release() \
+        .perform()
 
-    # Then move to target
-    ActionChains(driver).click_and_hold(handle).move_by_offset(offset, 0).release().perform()
+    ActionChains(driver) \
+        .click_and_hold(handle) \
+        .move_by_offset(offset, 0) \
+        .release() \
+        .perform()
 
-    
+    # -------------------------------------------------------------------------
+    # Execute Search
+    # -------------------------------------------------------------------------
 
-    # Click Search
     WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, "ctl00_MainContent_btnSearch"))
+        EC.element_to_be_clickable(
+            (By.ID, "ctl00_MainContent_btnSearch")
+        )
     ).click()
+
     time.sleep(5)
 
-    # click download
+    # -------------------------------------------------------------------------
+    # Download Search Results
+    # -------------------------------------------------------------------------
+
     WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, "ctl00_MainContent_ImageButton1"))
+        EC.element_to_be_clickable(
+            (By.ID, "ctl00_MainContent_ImageButton1")
+        )
     ).click()
 
     time.sleep(10)
 
     return 1
 
+
 def download_manager(driver, df_input, min_name_score):
-    df_sorted = df_input.sort_values(by='SLNO', ascending=True)
+    """
+    Iterate through all entities and download OFAC search results.
+    """
+
+    df_sorted = df_input.sort_values(
+        by="SLNO",
+        ascending=True
+    )
+
     total_count = len(df_sorted)
 
-    for idx, row in enumerate(df_sorted.iterrows(), start=1):
-        name = row[1]['NAME']
+    for idx, (_, row) in enumerate(df_sorted.iterrows(), start=1):
+
+        name = row["NAME"]
 
         try:
+
             download_data(driver, name, min_name_score)
-            print(f"[+] Completed: {idx}/{total_count} -> {name}")
+
+            print(
+                f"[+] Completed: {idx}/{total_count} -> {name}"
+            )
+
         except Exception as e:
-            print(f"[!] Failed: {idx}/{total_count} -> {name} | Error : {e}")
+
+            print(
+                f"[!] Failed: {idx}/{total_count} -> {name} | Error: {e}"
+            )
+
     return driver
 
-def main(df_input, min_name_score):
-    print("[+] Initialize OFAC data download..")
 
-    # print(df_input)
+def main(df_input, min_name_score):
+    """
+    Main execution function.
+    """
+
+    print("[+] Initializing OFAX...")
 
     driver = configure_chrome()
-    driver = download_manager(driver, df_input, min_name_score)
-    driver.quit()
-    
-    print("[+] Completed all OFAC download successfully !")
+
+    try:
+
+        download_manager(
+            driver,
+            df_input,
+            min_name_score
+        )
+
+    finally:
+
+        driver.quit()
+
+    print("[+] Completed all OFAC downloads successfully.")
 
     return 1
 
+
 if __name__ == "__main__":
-    # input file
-    SCRIPT_DIR = Path(__file__).resolve().parent
-    PROJECT_ROOT = SCRIPT_DIR.parent
-    input_file = PROJECT_ROOT / "input" / "entity_names.csv"
-    df_input = pd.read_csv(input_file)
-    
-    # print(df_input.head(10))
 
-    # parameters
-    min_name_score = 70
+    if not INPUT_FILE.exists():
+        raise FileNotFoundError(
+            f"Input file not found:\n{INPUT_FILE}"
+        )
 
-    main(df_input, min_name_score)
+    df_input = pd.read_csv(INPUT_FILE)
 
+    MIN_NAME_SCORE = 70
 
-
+    main(df_input, MIN_NAME_SCORE)
