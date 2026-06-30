@@ -161,6 +161,10 @@ OFAX/
 │
 ├── input/
 │   └── entity_names.csv
+|
+├── downloads/
+|
+├── downloads_processed/
 │
 ├── output/
 │   ├── search_results.csv
