@@ -167,13 +167,13 @@ OFAX/
 ├── downloads_processed/
 │
 ├── output/
-│   ├── search_results.csv
+│   ├── synthetic_data_OFAC_<YYYY-MM-DD>.xlsx
 │   └── logs/
 │
 ├── src/
 │   ├── search_entities.py
-│   ├── process_data.py
-│   └── exporter.py
+│   ├── data_processing.py
+│   └── generate_synthetic_testset.py
 │
 ├── requirements.txt
 └── README.md
