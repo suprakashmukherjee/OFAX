@@ -1,6 +1,5 @@
 # Project data folders
-downloads/
-downloads_processed/
+
 
 # Additional project files
 /input/entity_names copy.csv
