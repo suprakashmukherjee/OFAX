@@ -1,0 +1,111 @@
+<div>
+	<table cellspacing="0" id="gvSearchResults" style="width:900px;border-collapse:collapse;">
+		<tr>
+			<td style="width:36%;"><a href="Details.aspx?id=6366">AL QAIDA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=6366">AL QA'IDA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA GROUP OF JIHAD IN IRAQ</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA GROUP OF JIHAD IN THE LAND OF THE TWO RIVERS</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=16278">AL-QA'IDA IN EGYPT</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA IN IRAQ</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA IN MESOPOTAMIA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=27318">AL-QAIDA IN SYRIA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=11695">AL-QA'IDA IN THE ARABIAN PENINSULA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=20159">AL-QA'IDA IN THE INDIAN SUBCONTINENT</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=6897">AL-QA'IDA IN THE ISLAMIC MAGHREB</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA IN THE LAND OF THE TWO RIVERS</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=11695">AL-QA'IDA IN THE SOUTH ARABIAN PENINSULA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=11695">AL-QA'IDA IN YEMEN</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=13041">AL-QA'IDA KURDISH BATTALIONS</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA OF JIHAD IN IRAQ</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=11695">AL-QA'IDA OF JIHAD ORGANIZATION IN THE ARABIAN PENINSULA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA OF JIHAD ORGANIZATION IN THE LAND OF THE TWO RIVERS</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=8759">AL-QAIDA OF THE JIHAD IN THE LAND OF THE TWO RIVERS</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=11695">AL-QA'IDA ORGANIZATION IN THE ARABIAN PENINSULA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=6897">TANZIM AL-QA'IDA FI BILAD AL-MAGHRIB AL-ISLAMIYA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">100</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=8759">TANZEEM QA'IDAT AL JIHAD/BILAD AL RAAFIDAINI</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">97</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=8759">TANZIM QA'IDAT AL-JIHAD FI BILAD AL-RAFIDAYN</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">97</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=11695">TANZIM QA'IDAT AL-JIHAD FI JAZIRAT AL-ARAB</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">97</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=7895">AL-AWADI, Hussein Qaid</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">IRAQ2</td><td style="width:7%;">SDN</td><td style="width:7%;">96</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=12888">QA'ID, Hasan</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">96</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=12888">QA'ID, Hasan Muhammad Abu Bakr</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">96</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=6366">AL QAEDA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">94</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=56410">QA'IDI, Ahmad</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">IFSR; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">92</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=20159">AL-QAEDA IN THE INDIAN SUBCONTINENT</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">90</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=13041">KURDISTAN BRIGADE OF AL-QAEDA IN IRAQ</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">90</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=20159">QAEDAT AL-JIHAD IN THE INDIAN SUBCONTINENT</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">FTO; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">87</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=19891">AL QAISI, Naif Saleh Salem</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">86</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=9598">AL-QA'QA</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">85</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=18348">'ABD-AL-QADIR</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=23634">AHMAT, Abdul Qadir</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=52164">AL-MORTADA, Abdul Qadir</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">GLOMAG</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=26715">AL-RAWI, Muhammad Abd-al-Qadir Mutni Assaf</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=18348">'AQIL, Abd al-Qadr</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=23634">BASIR, Abdul Qadir</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=23634">HAQQANI, Abdul Qadir</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=26715">MATNI, Muhammad 'Abd-al-Qadir</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=20439">MUMIN, Abdul Qadir</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=20439">MU'MIN, Abdul Qadr</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=23634">QADIR, Abdul</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=27013">QADO, Waad</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">GLOMAG</td><td style="width:7%;">SDN</td><td style="width:7%;">84</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=49753">BEIJING JINGHUA QIDI ELECTRONIC TECHNOLOGY CO., LTD.</td><td style="width:30%;">Room 1307, Floor 13, Building 3; No. 5 Courtyard, Tianhua Avenue; Daxing District</td><td style="width:10%;">Entity</td><td style="width:10%;">NPWMD</td><td style="width:7%;">SDN</td><td style="width:7%;">82</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=20882">AL-ALBANI, Abu Qatada</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">81</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=6950">AL-FILISTINI, Abu Qatada</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">81</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=37486">RUWWAD AL-QABIDAH COMPANY</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">76</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=10416">AL-QARD AL-HASSAN ASSOCIATION</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Entity</td><td style="width:10%;">SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">75</td>
+		</tr><tr class="alternatingRowColor">
+			<td style="width:36%;"><a href="Details.aspx?id=28004">AL-KHAZALI, Qais Hadi Sayed Hasan</td><td style="width:30%;">&nbsp;</td><td style="width:10%;">Individual</td><td style="width:10%;">GLOMAG; SDGT</td><td style="width:7%;">SDN</td><td style="width:7%;">74</td>
+		</tr><tr>
+			<td style="width:36%;"><a href="Details.aspx?id=29856">AL-QALA'A FOR PROTECTION, GUARDING, AND SECURITY SERVICES</td><td style="width:30%;">Opposite the gas station, enter hospital 601; Sheikh Saad; Mazzeh, West Villas</td><td style="width:10%;">Entity</td><td style="width:10%;">PAARSSR-EO13894</td><td style="width:7%;">SDN</td><td style="width:7%;">72</td>
+		</tr>
+	</table>
+</div>
